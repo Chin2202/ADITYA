@@ -1,5 +1,7 @@
 // Jokes
 const jokes = [
+  "Diii, parallel lines may never meet… but you and me, we’re always together 😘",
+    "Baby, why did the WiFi break up with you? It couldn’t handle your signal strength 🔌😂",
   "Why don’t scientists trust atoms? Because they make up everything!",
   "Parallel lines have so much in common. It’s a shame they’ll never meet.",
   "I told my computer I needed a break… now it won’t stop sending me KitKat ads.",
@@ -23,12 +25,13 @@ const loveNotes = [
 
 // Amazing notes
 const amazingNotes = [
-  "You’re brilliant at roasting me and still making me laugh 😂",
-  "You have the biggest heart 💙",
-  "You’re my safe space and my favorite chaos 💫",
-  "You never give up, and that inspires me every day ✨",
-  "You’re my favorite notification 📱💕",
-  "The little things you say replay in my mind like my favorite song 🎶"
+  "Baby, you’re brilliant at roasting me and still making me laugh 😂",
+    "Diii, you have the biggest heart — even when you act stubborn 💙",
+    "Baby, you never give up, and that inspires me every single day ✨",
+    "Diii, your sense of humor could light up any room 💫",
+    "Baby, you’re my safe space and my favorite chaos all at once 💌",
+    "Diii, you somehow make everything feel more fun, even our random inside jokes 😄",
+    "Baby, no one else can make me smile just by existing the way you do 🌟"
 ];
 
 // Music (YouTube)

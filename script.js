@@ -72,7 +72,7 @@ function startProgress() {
 
 // Easter Egg: click nickname 3 times for secret note
 let clickCount = 0;
-const nickname = document.getElementById("CUTIEPIE");
+const nickname = document.getElementById("nickname");
 
 nickname.addEventListener("click", function() {
   clickCount++;

@@ -9,6 +9,12 @@ h1 {
   color: #00ffe7;
   text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
   margin-top: 30px;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+
+h1:hover {
+  text-shadow: 0 0 20px #00ffe7, 0 0 40px #00ffe7, 0 0 60px #00ffff;
 }
 
 p {
@@ -26,13 +32,31 @@ button {
   border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   box-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
+}
+
+button:hover::after {
+  left: 125%;
 }
 
 button:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #ff00ff, 0 0 25px #00ffff;
+  box-shadow: 0 0 15px #ff00ff, 0 0 25px #00ffff, 0 0 35px #ff00ff;
 }
 
 #displayArea {
@@ -53,4 +77,5 @@ button:hover {
   width: 0%;
   height: 20px;
   background-color: #00ffe7;
+  transition: width 0.3s ease;
 }

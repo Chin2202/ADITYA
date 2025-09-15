@@ -1,7 +1,7 @@
 // Jokes
 const jokes = [
   "Diii, parallel lines may never meet… but you and me, we’re always together 😘",
-    "Baby, why did the WiFi break up with you? It couldn’t handle your signal strength 🔌😂",
+  "Baby, why did the WiFi break up with you? It couldn’t handle your signal strength 🔌😂",
   "Why don’t scientists trust atoms? Because they make up everything!",
   "Parallel lines have so much in common. It’s a shame they’ll never meet.",
   "I told my computer I needed a break… now it won’t stop sending me KitKat ads.",
@@ -26,12 +26,12 @@ const loveNotes = [
 // Amazing notes
 const amazingNotes = [
   "Baby, you’re brilliant at roasting me and still making me laugh 😂",
-    "Diii, you have the biggest heart — even when you act stubborn 💙",
-    "Baby, you never give up, and that inspires me every single day ✨",
-    "Diii, your sense of humor could light up any room 💫",
-    "Baby, you’re my safe space and my favorite chaos all at once 💌",
-    "Diii, you somehow make everything feel more fun, even our random inside jokes 😄",
-    "Baby, no one else can make me smile just by existing the way you do 🌟"
+  "Diii, you have the biggest heart — even when you act stubborn 💙",
+  "Baby, you never give up, and that inspires me every single day ✨",
+  "Diii, your sense of humor could light up any room 💫",
+  "Baby, you’re my safe space and my favorite chaos all at once 💌",
+  "Diii, you somehow make everything feel more fun, even our random inside jokes 😄",
+  "Baby, no one else can make me smile just by existing the way you do 🌟"
 ];
 
 // Music (YouTube)
@@ -69,3 +69,17 @@ function startProgress() {
     }
   }
 }
+
+// Easter Egg: click nickname 3 times for secret note
+let clickCount = 0;
+const nickname = document.getElementById("nickname");
+
+nickname.addEventListener("click", function() {
+  clickCount++;
+  if (clickCount === 3) {
+    alert("Baby, you found the secret! 💌 You mean the world to me, and nothing will ever change that. Always remember, you’re my favorite person in every universe. 💙");
+    clickCount = 0; // reset
+  }
+  // Reset count if more than 2 seconds pass between clicks
+  setTimeout(() => { clickCount = 0; }, 2000);
+});
